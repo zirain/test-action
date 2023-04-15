@@ -20,7 +20,8 @@ jobs:
           branch: release/v0.4
           labels: |
             cherrypick/release-v0.4
+          # put release manager here
           reviewers: |
-            AliceProxy
+            zirain
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
