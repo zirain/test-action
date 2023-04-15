@@ -15,10 +15,11 @@ jobs:
         with:
           fetch-depth: 0
       - name: Cherry pick into release/v0.4
-        uses: carloscastrojumo/github-cherry-pick-action@v1.0.1
+        uses: carloscastrojumo/github-cherry-pick-action@v1.0.9
         with:
           branch: release/v0.4
-          title: "[release/v0.4] {old_title}"
+          title: '[release/v0.4] {old_title}'
+          body: 'Cherry picking #{old_pull_request_id} onto release/v0.4'
           labels: |
             cherrypick/release-v0.4
           # put release manager here
